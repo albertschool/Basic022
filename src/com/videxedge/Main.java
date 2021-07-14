@@ -109,19 +109,67 @@ public class Main {
     }
 
     public static void q10a() {
-
+        Scanner input = new Scanner(System.in);
+        String factory;
+        int wheels;
+        System.out.println ("Enter factory name:");
+        factory = input.nextLine();
+        System.out.println ("Enter number of wheels:");
+        wheels = input.nextInt();
+        if (wheels > 4) {
+            System.out.println(factory+" HEAVY");
+        } else if (wheels == 2) {
+            System.out.println(factory+" TWO");
+        } else if (wheels < 1) {
+            System.out.println(factory+" ERROR");
+        } else {
+            System.out.println("Have a  good day");
+        }
     }
 
     public static void q10b() {
-
+        Scanner input = new Scanner(System.in);
+        int dishes, price;
+        System.out.println ("Enter number of dishes:");
+        dishes = input.nextInt();
+        System.out.println ("Enter price of dish:");
+        price = input.nextInt();
+        if (dishes > 50) {
+            System.out.println("You have to pay: "+ (price*(dishes-2)));
+        } else {
+            System.out.println("You have to pay: "+ (price*dishes));
+        }
     }
 
     public static void q11() {
-
+        Scanner input = new Scanner(System.in);
+        int age, tickets;
+        System.out.println ("Enter age of passenger:");
+        age = input.nextInt();
+        System.out.println ("Enter number of tickets:");
+        tickets = input.nextInt();
+        if (age <= 18) {
+            System.out.println("YOUTH");
+            System.out.println("You have to pay: "+ 40*tickets);
+        } else {
+            System.out.println("ADULT");
+            System.out.println("You have to pay: "+ 60*tickets);
+        }
     }
 
     public static void q12() {
-
+        Scanner input = new Scanner(System.in);
+        int class10, class11;
+        System.out.println ("Enter points of class 10:");
+        class10 = input.nextInt();
+        System.out.println ("Enter points of class 10:");
+        class11 = input.nextInt();
+        if (class11 > class10) {
+            System.out.println("Number of winning class: "+ class11);
+        } else {
+            System.out.println("Number of winning class: "+ class10);
+        }
+        System.out.println("The diff between classes: "+ (int)Math.abs(class11-class10));
     }
 
     public static void main(String[] args) {
