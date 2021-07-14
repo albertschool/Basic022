@@ -66,7 +66,7 @@ public class Main {
         String name;
         int sections;
         System.out.println ("Enter the driver name:");
-        name = input.nextLine();
+        name = input.next();
         System.out.println ("Enter the road sections:");
         sections = input.nextInt();
         if (sections > 8) {
@@ -81,7 +81,7 @@ public class Main {
         String name;
         int absences;
         System.out.println ("Enter the student name:");
-        name = input.nextLine();
+        name = input.next();
         System.out.println ("Enter number of absences:");
         absences = input.nextInt();
         System.out.print(name+" have "+absences+" absences. ");
@@ -99,7 +99,7 @@ public class Main {
         String name;
         int classes;
         System.out.println ("Enter the student name:");
-        name = input.nextLine();
+        name = input.next();
         System.out.println ("Enter number of classes:");
         classes = input.nextInt();
         System.out.println(name+" have to pay "+100*classes);
@@ -113,7 +113,7 @@ public class Main {
         String factory;
         int wheels;
         System.out.println ("Enter factory name:");
-        factory = input.nextLine();
+        factory = input.next();
         System.out.println ("Enter number of wheels:");
         wheels = input.nextInt();
         if (wheels > 4) {
@@ -123,7 +123,7 @@ public class Main {
         } else if (wheels < 1) {
             System.out.println(factory+" ERROR");
         } else {
-            System.out.println("Have a  good day");
+            System.out.println("Have a good day");
         }
     }
 
